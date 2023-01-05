@@ -1,0 +1,75 @@
+.programmes{
+    padding-top: 70px;
+    background-color:rgba(201, 202, 118, 0.137);
+    background: transparent linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0% no-repeat padding-box;
+}
+
+ 
+
+.subheads h1{
+  font-family: 'Poppins', sans-serif;
+font-size: 20px;
+color: #fff;
+}
+.subheads{
+  position: absolute; bottom: 20px; 
+background-color: rgba(0, 0, 0, 0.781);
+  margin-left: 50px;
+  padding: 15px;
+  /* background-color:rgba(184, 185, 106, 0.63); */
+}
+.programmes__main{
+    background: url('../assets/img/camp-5.jpg');
+    height:400px;
+    position: relative;
+    background-size: cover;
+    background-position:center;
+}
+.programmes__main h1{
+    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+color: #fff;
+}
+.do__sub{
+  font-family: 'Poppins', sans-serif;
+  max-width: 150px;
+  padding: 5px;
+  background-color: rgb(225, 174, 79);
+  color: #fff;
+}
+.do__row p{
+  font-family: 'Poppins', sans-serif;
+}
+.programmes__content{
+   
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+@media only screen and (min-width: 800px) {
+    .programmes__content{
+     max-width: 85%;
+    }
+  }
+
+  
+
+
+
+  
+
+  
+
+
+  @media only screen and (max-width: 800px) {
+    .programmes__main{
+      
+      height:200px;
+     
+      /* background-position: center; */
+  }
+  .programmes__content{
+    padding: 15px;
+    padding-bottom: 50px;
+  }
+  }
