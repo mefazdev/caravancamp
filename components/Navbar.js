@@ -188,16 +188,12 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <Link href="/Register">
+          {/* <Link href="/Register"> */}
             <div className="collapse_row">
               <p>Register</p>
             </div>
-          </Link>
-          <Link href="/Cntact">
-            <div className="collapse_row">
-              <p>Contact us</p>
-            </div>
-          </Link>
+          {/* </Link> */}
+          
 
            
           
@@ -235,6 +231,12 @@ export default function Navbar() {
               ""
             )}
           </div>
+
+          <Link href="/Contact">
+            <div className="collapse_row">
+              <p>Contact us</p>
+            </div>
+          </Link>
           
         </div>
       ) : (
