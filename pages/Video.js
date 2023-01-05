@@ -8,13 +8,13 @@ export default function Video() {
       <Navbar />
 
       <div className="vidoe" style={{scrollBehavior:'smooth'}}>
-        <div className="blogs__main"
+        <div className="conatact__main"
                 style={{
                   backgroundImage: `url(${bg.src})`,
                   backgroundPosition:'center'
                 }}
         >
-          <div className="about__main__head">
+          <div className="subheads">
             <h1>Video Gallery</h1>
           </div>
         </div>

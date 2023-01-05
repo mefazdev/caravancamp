@@ -21,13 +21,13 @@ export default function Photos() {
 
       <div className="photos" style={{ scrollBehavior: "smooth" }}>
         <div
-          className="blogs__main"
+          className="conatact__main"
           style={{
             backgroundImage: `url(${bg.src})`,
             backgroundPosition: "center",
           }}
         >
-          <div className="about__main__head">
+          <div className="subheads">
             <h1>Photo Gallery</h1>
           </div>
         </div>
