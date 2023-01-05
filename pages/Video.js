@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import bg from '../assets/img/camp-9.jpg'
+import bg from '../assets/img/camp-8.jpg'
 export default function Video() {
   return (
     <div>

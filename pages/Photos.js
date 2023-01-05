@@ -13,7 +13,7 @@ import img10 from "../assets/img/photo-8.jpg";
 // import img5 from "../assets/img/photos/img-5.jpg";
 // import img6 from "../assets/img/photos/img-6.jpg";
 import Footer from "../components/Footer";
-import bg from "../assets/img/camp-9.jpg";
+import bg from "../assets/img/camp-8.jpg";
 export default function Photos() {
   return (
     <div>
