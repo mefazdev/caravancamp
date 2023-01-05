@@ -49,7 +49,7 @@ export default function Programmes() {
             </a>
           </div>
         </div> */}
-        <div className="prgm__content__row gap-5 grid lg:grid-cols-3">
+        <div className="prgm__content__row gap-5 grid md:grid-cols-2 lg:grid-cols-3">
           
             <div className="prgm__content__row__boxes"
              style={{
