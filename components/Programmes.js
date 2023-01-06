@@ -1,14 +1,16 @@
  
 import React from "react";
-import manner from "../assets/img/manner.jpg";
-import swimming from '../assets/img/swimming.jpg'
-import karatte from '../assets/img/karatte.jpg'
-import spiritual from '../assets/img/spiritual.webp'
-import goal from '../assets/img/goal.jpg'
-import lifestyle from '../assets/img/lifestyle.jpg'
-import careerg from '../assets/img/careerg.jpg'
-import wellness from '../assets/img/wellness.jpg'
-import pri from '../assets/img/pri.jpg'
+// import manner from "../assets/img/manner.jpg";
+// import swimming from '../assets/img/swimming.jpg'
+// import karatte from '../assets/img/karatte.jpg'
+// import spiritual from '../assets/img/spiritual.webp'
+// import goal from '../assets/img/goal.jpg'
+// import lifestyle from '../assets/img/lifestyle.jpg'
+// import careerg from '../assets/img/careerg.jpg'
+// import wellness from '../assets/img/wellness.jpg'
+// import pri from '../assets/img/pri.jpg'
+import children from '../assets/img/children.jpeg'
+import garden from '../assets/img/garden.jpeg'
 export default function Programmes() {
   return (
     <div className="h__prgm">
@@ -53,25 +55,27 @@ export default function Programmes() {
           
             <div className="prgm__content__row__boxes"
              style={{
-              backgroundImage: `url(${pri.src})`,
+              backgroundImage: `url(${children.src})`,
             }}
             >
               <div className="prgm__row__caption">
-                <h3> Core islamic principles </h3>
+              <h3>Summer camp </h3></div>
               </div>
-            </div>
          
+
+
+
             <div className="prgm__content__row__boxes"
             style={{
-              backgroundImage: `url(${spiritual.src})`,
+              backgroundImage: `url(${garden.src})`,
             }}
             >
               <div className="prgm__row__caption">
-                <h3>Identity and spirituality</h3>
-              </div>
+                <h3>Winter camp</h3>
+              </div>  
             </div>
    
-            <div className="prgm__content__row__boxes"
+            {/* <div className="prgm__content__row__boxes"
              style={{
               backgroundImage: `url(${goal.src})`,
             }}
@@ -101,11 +105,11 @@ export default function Programmes() {
               <div className="prgm__row__caption">
                 <h3>Islamic lifestyle</h3>
               </div>
-            </div>
+            </div> */}
          
 
   
-            <div className="prgm__content__row__boxes"
+            {/* <div className="prgm__content__row__boxes"
             style={{
               backgroundImage: `url(${wellness.src})`,
             }}
@@ -126,9 +130,9 @@ export default function Programmes() {
               <div className="prgm__row__caption">
                 <h3>Manners and etiquettes</h3>
               </div>
-            </div>
+            </div> */}
               
-            <div
+            {/* <div
               className="prgm__content__row__boxes"
               style={{
                 backgroundImage: `url(${swimming.src})`,
@@ -137,10 +141,10 @@ export default function Programmes() {
               <div className="prgm__row__caption">
                 <h3>Indoor games & swimming</h3>
               </div>
-            </div>
+            </div> */}
          
       
-            <div
+            {/* <div
               className="prgm__content__row__boxes"
               style={{
                 backgroundImage: `url(${karatte.src})`,
@@ -150,7 +154,7 @@ export default function Programmes() {
                 <h3>Kalarippayatt</h3>
 
               </div>
-            </div>
+            </div> */}
  
         </div>
       </div>

@@ -3,6 +3,7 @@ import Carousel from "react-material-ui-carousel";
 import camp1 from '../assets/img/camp-1.jpg'
 import camp2 from '../assets/img/camp-2.jpg'
 import camp3 from '../assets/img/camp-7.jpg'
+import garden from '../assets/img/garden.jpeg'
 export default function MainBanner() {
   return (
     <div>
@@ -17,9 +18,9 @@ export default function MainBanner() {
       >
            <div className="main__banner__box"
             style={{
-              // backgroundImage: `url(${camp1.src})`,
+          
 
-              backgroundImage: `linear-gradient(180deg,rgba(40, 39, 39, 0.139),rgba(10, 10, 11, 0.646)),url(${camp1.src})`
+              backgroundImage: `linear-gradient(180deg,rgba(40, 39, 39, 0.139),rgba(10, 10, 11, 0.646)),url(${garden.src})`
    
             }}
            >

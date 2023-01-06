@@ -19,7 +19,7 @@ export default function Involve() {
             <div  className="invo__box">
               <MenuBookIcon id="invo__icon" />
               <div className="involve__footer">
-                <h4>Scholers</h4>
+                <h4>Scholars</h4>
               </div>
             </div>
         
@@ -41,7 +41,7 @@ export default function Involve() {
             <div  className="invo__box">
               <FavoriteIcon id="invo__icon" />
               <div className="involve__footer">
-                <h4>Docters</h4>
+                <h4>Doctors</h4>
               </div>
             </div>
             <div  className="invo__box">
