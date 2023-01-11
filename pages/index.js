@@ -38,12 +38,13 @@ export default function Home() {
           content="
           The Caravan camps are an immersive learning experience designed to acquaint your children with the core Islamic disciplines, lifestyle, contemporary issues, and leadership skills. The Camp will include activities that introduce the participants to the living landscape around them with trekking, as well as to sustainable and regenerative living practices such as permaculture, conscious and responsible consumption, minimalism, etc."
         />
-        <meta property="og:title" content="Home" key="title" />
+        <meta property="og:title" content="Caravan camps" key="title" />
         <link rel="canonical" href="https://www.caravancamps.in" />
         <link rel="icon" 
         href="/favicon.ico" 
-        // href=""
+    
         />
+     
       </Head>
       <Navbar />
 
