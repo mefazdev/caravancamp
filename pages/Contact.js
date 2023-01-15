@@ -19,8 +19,7 @@ export default function Contact() {
   const [message,setMessage] = useState('')
   const [phone , setPhone] = useState('')
   const [sending, setSending] = useState(false)
-  const [verified, setVerified ]= useState(false)
-      
+       
  const data = {
    name : name,
    email : email,
@@ -31,32 +30,6 @@ export default function Contact() {
 
  }  
  
-
-//  const API_PATH = 'https://bolster-amber.vercel.app/api/index';
-//  const send = async (e)=>{
-//   e.preventDefault();
-//   axios({
-//     method: 'post',
-//     url: `${API_PATH}`,
-//     headers: { 'content-type': 'application/json' },
-//     data: data
-//   })
-//     .then(result => {
-//       // this.setState({
-//       //   mailSent: result.data.sent
-//       // })
-//       console.log('result >>>',result)
-//     }
-    
-//     )
-//     .catch(
-//       // error => this.setState({ error: error.message })
-//       console.log('error found ==>>')
-//       );
-
-//   // await console.log(data)
-//   setSending(false)
-//  }
 
 
 const send = async (e)=> {

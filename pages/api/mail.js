@@ -13,7 +13,7 @@ export default (req,res)  =>{
     `;
      
     const data = {
-        to:'salahzain139@gmail.com',
+        to:'caravancamp.ae@gmail.com',
         from:'caravancamp.ae@gmail.com',
         subject:'Message from  website',
         text: message,
