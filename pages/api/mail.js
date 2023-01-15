@@ -1,8 +1,8 @@
 import mail from '@sendgrid/mail'
 
-mail.setApiKey(process.env.SENDGRID_API_KEY)
+mail.setApiKey('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')
 // process.env.SENDGRID_API_KEY
-export default (req,res)=>{
+export default (req,res)  =>{
     const body = JSON.parse(req.body);
 
     const message   = `
@@ -13,16 +13,16 @@ export default (req,res)=>{
     `;
      
     const data = {
-        to : 'bolsterfoundation@gmail.com',
-        from:'contact@bolsterfoundation.in',
-        subject:'Message from bolsterfoundation.in website',
+        to:'salahzain139@gmail.com',
+        from:'caravancamp.ae@gmail.com',
+        subject:'Message from  website',
         text: message,
         html: message.replace(/\r\n/g, '<br>')
     }
     // console.log(body)
     // mail.send(data)
 
-    mail
+   mail
   .send(data)
   .then(() => {
     console.log("success")

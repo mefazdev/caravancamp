@@ -59,20 +59,28 @@ export default function Contact() {
 //  }
 
 
-const send = async (e)=>{
-
-  e.preventDefault()
+const send = async (e)=> {
   setSending(true)
-  fetch('/api/mail', { 
+  e.preventDefault()
+  // try {
+
+  setSending(true)
+await  fetch('/api/mail', { 
     method:'post',
     body:JSON.stringify(data)
    
-  }) 
+  
+  }
+  ) 
   setSending(false)
   setName('')
   setEmail('')
   setPhone('')
   setMessage('')
+  // } catch (error) {
+  //   alert(error.message)
+  // }
+  setSending(false)
 }
 
   return (
@@ -120,7 +128,7 @@ const send = async (e)=>{
               <div className="flex contact__mail">
                 <AlternateEmailIcon className="contact__adress__icons" />
                 <p>
-                  carvan@gmail.com,
+                  info@caravancamps.com
                   <br />
                 </p>
               </div>
@@ -154,7 +162,7 @@ const send = async (e)=>{
               <div>
                 <form
                 // action="#"
-                  // onSubmit={send}
+                  onSubmit={send}
                   className="grid grid-cols-1"
                 >
                   <input
@@ -206,7 +214,8 @@ const send = async (e)=>{
              /> */}
                 <button
                 style={{width:'100%'}}
-                type='submit'
+                // type='submit'
+                onClick={send}
                   >
                     
                     {sending ? "SENDING..." :'SEND'}  

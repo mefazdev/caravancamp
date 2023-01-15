@@ -15,14 +15,35 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* background-position: bottom; */
+  /* border: saddlebrown solid; */
 }
-
+@media only screen and (max-width: 800px) {
+   
+  
+  
+  
+  .main__banner__box {
+    /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Prayer_in_Cairo_1865.jpg/1200px-Prayer_in_Cairo_1865.jpg'); */
+    height: 300px;
+    /* background: url("../assets/images/scroll.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-position: bottom; */
+   
+  }
+  }
 
 /* <<<<<<<HOME ABOUT >>>>>>>> */
 
@@ -835,7 +856,11 @@ padding-bottom: 30px;
   margin-top: -5px;
   font-size: 15px;
  
-}}
+}
+
+
+ 
+}
 .float{
   position:fixed;
   width:60px;

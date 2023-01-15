@@ -52,12 +52,11 @@ export default function Footer() {
 <div className="flex footer__name">
     <ApartmentIcon id="footer__icon" />
     <div>
-      <h2>Markaz garden</h2>
-      <h3>Poonur</h3>
+      <h2>18 Camden road</h2>
+      <h3>London</h3>
 
-      <h3>Unnikkulam(PO)</h3>
-      <h3>Kozhikod, Kerala</h3>
-      <h3>India 673574</h3>
+      <h3>NW1 9dp</h3>
+      
     </div>
   </div>
 </div>
