@@ -1,5 +1,3 @@
- 
-
 .home {
   /* height: 200vh; */
   /* border: solrgb(129, 112, 112)red; */
@@ -24,10 +22,6 @@
   /* border: saddlebrown solid; */
 }
 @media only screen and (max-width: 800px) {
-   
-  
-  
-  
   .main__banner__box {
     /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Prayer_in_Cairo_1865.jpg/1200px-Prayer_in_Cairo_1865.jpg'); */
     height: 300px;
@@ -41,9 +35,8 @@
     align-items: center;
     justify-content: center;
     /* background-position: bottom; */
-   
   }
-  }
+}
 
 /* <<<<<<<HOME ABOUT >>>>>>>> */
 
@@ -144,9 +137,8 @@
     linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0%
     no-repeat padding-box;
 
-    /* background: linear-gradient(369deg, rgba(228, 205, 105, 0.196) 0%, #eadb3813 100%) 0% 0%
+  /* background: linear-gradient(369deg, rgba(228, 205, 105, 0.196) 0%, #eadb3813 100%) 0% 0%
     no-repeat padding-box; */
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -236,7 +228,6 @@
 .prgm__content__main__right button:hover {
   transform: scale(1.011);
 }
- 
 
 .prgm__content__row__box {
   height: 300px;
@@ -248,7 +239,7 @@
   width: 100%;
   align-items: center;
   display: flex;
- 
+
   max-width: 100%;
   position: absolute;
   bottom: 0px;
@@ -258,38 +249,30 @@
   font-family: "Poppins", sans-serif;
   color: #fff;
   margin-left: 5px;
- 
 }
-.prgm__content__row__boxes{
-
-    background-size: cover;
-    background-position: center;
-    height: 230px;
-    position: relative;
+.prgm__content__row__boxes {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  position: relative;
 }
 
-.prgm__content__row__boxes:hover{
+.prgm__content__row__boxes:hover {
   opacity: 1;
-  transform: scale(1.01); 
+  transform: scale(1.01);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
- 
 }
 
- 
- 
- 
- 
 /* <<<<<<<<<< GET INVOLV >>>>>>>>>>> */
 
 .hm__involve {
- 
   padding-bottom: 90px;
 
   /* background: transparent
     linear-gradient(369deg, rgba(228, 205, 105, 0.196) 0%, #eadb3813 100%) 0% 0%
     no-repeat padding-box; */
 
-    background: transparent
+  background: transparent
     linear-gradient(369deg, rgba(201, 202, 118, 0.075) 0%, #aed30932 100%) 0% 0%
     no-repeat padding-box;
 }
@@ -316,7 +299,6 @@
   height: 35px;
   display: flex;
   align-items: center;
- 
 }
 .hm__involve__head h3 {
   font-family: "Poppins", sans-serif;
@@ -326,59 +308,50 @@
 .hm__involve__row {
   margin-top: 20px;
 }
- 
+
 .hm__involve__box:hover {
   opacity: 0.9;
   box-shadow: 2px 5px 5px 5px rgb(255, 255, 255);
 }
- 
- 
 
-
-
-#invo__icon{
-    /* background-color: green; */
-    font-size: 100px;
-    margin: auto;
-    color: rgb(189, 143, 57);
-    /* border: saddlebrown solid; */
+#invo__icon {
+  /* background-color: green; */
+  font-size: 100px;
+  margin: auto;
+  color: rgb(189, 143, 57);
+  /* border: saddlebrown solid; */
 }
-.invo__box{
-
-    border: rgb(225, 174, 79) solid;
+.invo__box {
+  border: rgb(225, 174, 79) solid;
   border-top: none;
   border-right: none;
   border-left: none;
   border-radius: 100%;
-    height: 160px;
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    margin: auto;
-    /* background-color: red; */
-
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  /* background-color: red; */
 }
-.involve__footer{
-    text-align: center;
-    /* background-color: rgba(225, 174, 79, 0.836); */
-    /* color: #fff; */
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    /* max-width: 100%; */
+.involve__footer {
+  text-align: center;
+  /* background-color: rgba(225, 174, 79, 0.836); */
+  /* color: #fff; */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  /* max-width: 100%; */
   /* width: fit-content; */
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 7px;
   margin-top: 4px;
- 
 }
-
- 
 
 .home__social {
   position: fixed;
@@ -399,7 +372,7 @@
   width: 40px;
   margin-top: 10px;
   color: rgb(204, 119, 8);
-    /* background-color: rgb(225, 174, 79); */
+  /* background-color: rgb(225, 174, 79); */
 }
 #social__ic:hover {
   color: rgb(246, 144, 11);
@@ -466,12 +439,10 @@ $startPosY: -800%; */
 
 .main__banner__div {
   width: 100%;
-  
 }
 
 .main__head__div {
   margin: auto;
- 
 }
 
 .main__head__div h1 {
@@ -506,7 +477,6 @@ $startPosY: -800%; */
   overflow: hidden;
   white-space: nowrap;
   margin-top: -20px;
- 
 }
 .main__head__div:first-of-type {
   /* For increasing performance 
@@ -552,7 +522,7 @@ $startPosY: -800%; */
     margin-left: 0px;
   }
   100% {
-    margin-left:10px;
+    margin-left: 10px;
   }
 }
 
@@ -625,13 +595,11 @@ margin-top:200px;
   .home {
     padding-top: 60px;
   }
- 
-  
+
   .main__banner__div {
     padding: 15px;
     bottom: 30px;
     left: 3%;
-    
   }
 
   .home__about {
@@ -705,23 +673,11 @@ margin-top:200px;
     border-radius: 14px;
 } */
 
-  
   .camp__ad {
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
-
- 
- 
- 
-
-
-
- 
- 
-
- 
 
 #modal {
   display: flex;
@@ -815,72 +771,68 @@ margin-top:200px;
   display: flex;
 }
 
-.obj{
-    /* margin-top: 30px; */
-    /* min-height: 400px; */
-    /* background-image: url('../assets//img//camp-3.jpg'); */
-    /* background: url('../assets//img//camp-3.jpg'), #6DB3F2; */
+.obj {
+  /* margin-top: 30px; */
+  /* min-height: 400px; */
+  /* background-image: url('../assets//img//camp-3.jpg'); */
+  /* background: url('../assets//img//camp-3.jpg'), #6DB3F2; */
 
-    /* background-image: linear-gradient(180deg,rgba(40, 39, 39, 0.308),rgba(10, 10, 11, 0.879)),url('../assets//img//camp-3.jpg'); */
-   
-    background-image: linear-gradient(180deg,rgba(40, 39, 39, 0.139),rgba(10, 10, 11, 0.646)),url('../assets//img//camp-3.jpg');
-   
-    background-size: cover;
+  /* background-image: linear-gradient(180deg,rgba(40, 39, 39, 0.308),rgba(10, 10, 11, 0.879)),url('../assets//img//camp-3.jpg'); */
 
-background-position: center;
- 
-padding-bottom: 30px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(40, 39, 39, 0.139),
+      rgba(10, 10, 11, 0.646)
+    ),
+    url("../assets//img//camp-3.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  padding-bottom: 30px;
 }
 
-.obj p{
-    font-family: "Poppins", sans-serif;
-    margin-top: -5px;
-    font-size: 16px;
-    /* letter-spacing: .2px; */
+.obj p {
+  font-family: "Poppins", sans-serif;
+  margin-top: -5px;
+  font-size: 16px;
+  /* letter-spacing: .2px; */
 }
-.obj__row{
-    background-color: rgba(0, 0, 0, 0.326);
+.obj__row {
+  background-color: rgba(0, 0, 0, 0.326);
 }
 @media only screen and (min-width: 800px) {
-    .obj__contnt {
-      max-width: 85%;
-      /* border: solid green; */
-      margin: auto;
-    
-    }
+  .obj__contnt {
+    max-width: 85%;
+    /* border: solid green; */
+    margin: auto;
   }
-  @media only screen and (max-width: 800px) {
-   
-.obj p{
- 
-  margin-top: -5px;
-  font-size: 15px;
- 
 }
-
-
- 
+@media only screen and (max-width: 800px) {
+  .obj p {
+    margin-top: -5px;
+    font-size: 15px;
+  }
 }
-.float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
   box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index: 100;
 }
 
-.my-float{
-  margin-top:16px;
-
+.my-float {
+  margin-top: 16px;
 }
-
 
 /* .main__head__span {
 
@@ -905,5 +857,3 @@ padding-bottom: 30px;
     -webkit-backface-visibility: hidden;
 
 } */
-
-

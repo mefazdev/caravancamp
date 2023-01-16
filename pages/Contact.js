@@ -11,58 +11,50 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneInput from "react-phone-number-input";
 import axios from "axios";
-// import api from '../api/index.php'
+import emailjs from "emailjs-com";
+
 export default function Contact() {
-
-  const [name, setName] = useState('')
-  const [email,setEmail] = useState('')
-  const [message,setMessage] = useState('')
-  const [phone , setPhone] = useState('')
-  const [sending, setSending] = useState(false)
-       
- const data = {
-   name : name,
-   email : email,
-   phone : phone,
-   message : message,
-  //  mailSent: false,
-  // error: null
-
- }  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+  const [sending, setSending] = useState(false);
  
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSending(true);
+    emailjs
+      .sendForm(
+        "service_0t31ani",
+        "template_rdy02z9",
+        e.target,
+        "8HsRBRa0_tQCQCTtq"
+      )
+      .then(
+        (result) => {
+          // console.log(result.text);
 
+        },
+        (error) => {
 
-const send = async (e)=> {
-  setSending(true)
-  e.preventDefault()
-  // try {
-
-  setSending(true)
-await  fetch('/api/mail', { 
-    method:'post',
-    body:JSON.stringify(data)
-   
-  
-  }
-  ) 
-  setSending(false)
+          console.log(error.text);
+        }
+      );
+    setSending(false);
   setName('')
   setEmail('')
   setPhone('')
   setMessage('')
-  // } catch (error) {
-  //   alert(error.message)
-  // }
-  setSending(false)
-}
+      
+ 
+  
 
+  };
   return (
     <div>
       <Navbar />
-      <div className="contact" style={{scrollBehavior:'smooth'}}>
-        <div className="conatact__main"
-        
-        >
+      <div className="contact" style={{ scrollBehavior: "smooth" }}>
+        <div className="conatact__main">
           <div className="subheads">
             <h1>Contact us</h1>
           </div>
@@ -112,19 +104,19 @@ await  fetch('/api/mail', {
                 </a>
 
                 {/* <a href="https://twitter.com/cleverkingsinfo"> */}
-                  <TwitterIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
+                <TwitterIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 {/* </a> */}
 
                 {/* <a href=""> */}
-                  <YouTubeIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
+                <YouTubeIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 {/* </a> */}
 
                 {/* <a href="https://instagram.com/cleverkingsofficial?utm_medium=copy_link"> */}
-                  <InstagramIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
+                <InstagramIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 {/* </a> */}
 
                 {/* <a href="https://www.linkedin.com/company/cleverkings/"> */}
-                  <LinkedInIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
+                <LinkedInIcon className="contact__social__icons transform motion-safe:hover:scale-110 ...  " />
                 {/* </a> */}
               </div>
             </div>
@@ -134,8 +126,8 @@ await  fetch('/api/mail', {
 
               <div>
                 <form
-                // action="#"
-                  onSubmit={send}
+                  // action="#"
+                  onSubmit={sendEmail}
                   className="grid grid-cols-1"
                 >
                   <input
@@ -143,7 +135,7 @@ await  fetch('/api/mail', {
                     name="name"
                     value={name}
                     placeholder="Name"
-                    onChange={(e)=>setName(e.target.value)}
+                    onChange={(e) => setName(e.target.value)}
                   />
                   <input
                     required
@@ -151,17 +143,16 @@ await  fetch('/api/mail', {
                     type="email"
                     value={email}
                     placeholder="Email"
-                    onChange={(e)=>setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   {/* <div className='contact__phone__input'> */}
-                  <input 
-                  required
-                   name="Phone"
-                   placeholder="Phone" 
-                  className='pl-2'
-                  value={phone}
-                  onChange={(e)=>setPhone(e.target.value    )}
-                  
+                  <input
+                    required
+                    name="phone"
+                    placeholder="Phone"
+                    className="pl-2"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                   {/* <PhoneInput  
               name='phone'
@@ -179,22 +170,20 @@ await  fetch('/api/mail', {
                     name="message"
                     value={message}
                     placeholder="Message"
-                    onChange={(e)=>setMessage(e.target.value)}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                   {/* <ReCAPTCHA className='mt-3'
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                onChange={()=>setVerified(true)}
              /> */}
-                <button
-                style={{width:'100%'}}
-                // type='submit'
-                onClick={send}
+                  <button
+                    style={{ width: "100%" }}
+                    type="submit"
+                    // onClick={(e)=>sendEmail(e)}
                   >
-                    
-                    {sending ? "SENDING..." :'SEND'}  
+                    {sending ? "SENDING..." : "SEND"}
                   </button>
                 </form>
-                
               </div>
             </div>
           </div>
@@ -206,7 +195,7 @@ await  fetch('/api/mail', {
   );
 }
 
-
-
 // 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
 // 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
+
+// 849AqTLSMCa3
