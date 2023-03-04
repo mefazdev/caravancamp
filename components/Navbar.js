@@ -106,7 +106,8 @@ export default function Navbar() {
               </span>
 
               {/* <Link href="/Contact"> */}
-              <h6>Register</h6>
+              <a href="https://forms.gle/25AUymSpDaNyzmu59"><h6>Register</h6></a>
+              
               {/* </Link> */}
               <span className="flex">
                 <Link href="/Contact">

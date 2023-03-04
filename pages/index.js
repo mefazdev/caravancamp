@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Objectives from "../components/Objectives";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import poster from '../assets/img/poster.jpeg'
 export default function Home() {
   const [open, setOpen] = useState(false);
 
@@ -23,11 +24,11 @@ export default function Home() {
     return new Promise((res) => setTimeout(res, delay));
   }
   const controlOpen = async () => {
-    await timeout(6000);
+    await timeout(3000);
     setOpen(true);
   };
   useEffect(() => {
-    // controlOpen();
+    controlOpen();
   }, []);
   return (
     <div>
@@ -89,8 +90,8 @@ export default function Home() {
               The Caravan camps are an immersive learning experience designed to acquaint your children with the core Islamic disciplines, lifestyle, contemporary issues, and leadership skills. The Camp will include activities that introduce the participants to the living landscape around them with trekking, as well as to sustainable and regenerative living practices such as permaculture, conscious and responsible consumption, minimalism, etc.
             
               </p>
-         
-                <button>Register now</button>
+                <a href="https://forms.gle/25AUymSpDaNyzmu59"><button>Register now</button></a>
+                
       
             </div>
           </div>
@@ -109,7 +110,7 @@ export default function Home() {
       <Footer />
       <Modal
         id="modal"
-        open={false}
+        open={open}
         // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
@@ -119,9 +120,9 @@ export default function Home() {
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
           </div>
           <div className="modal__footer">
-            <h3>Bolster Summer Camp</h3>
+            {/* <h3>Bolster Summer Camp</h3> */}
             <div className="modal__footer__div">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScZUOZOCWbbri_8Kd_xfTZizVPJAUG1soCbouvUhJSP4fX85Q/viewform?usp=pp_url">
+              <a href="https://forms.gle/25AUymSpDaNyzmu59">
                 <button>REGISTER NOW</button>
               </a>
             </div>
