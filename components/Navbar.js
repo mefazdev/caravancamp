@@ -162,7 +162,7 @@ export default function Navbar() {
 
           {/* <Link href="/Register"> */}
           <div className="collapse_row">
-            <p>Register</p>
+          <a href="https://forms.gle/25AUymSpDaNyzmu59"><p>Register</p></a>
           </div>
           {/* </Link> */}
 
