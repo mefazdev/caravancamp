@@ -90,7 +90,7 @@ export default function Home() {
               The Caravan camps are an immersive learning experience designed to acquaint your children with the core Islamic disciplines, lifestyle, contemporary issues, and leadership skills. The Camp will include activities that introduce the participants to the living landscape around them with trekking, as well as to sustainable and regenerative living practices such as permaculture, conscious and responsible consumption, minimalism, etc.
             
               </p>
-                <a href="https://forms.gle/25AUymSpDaNyzmu59"><button>Register now</button></a>
+                <a href="https://forms.gle/FPDqfa57UPTzUZhs7"><button>Register now</button></a>
                 
       
             </div>
@@ -120,9 +120,9 @@ export default function Home() {
             <CloseIcon id="close__icon" onClick={() => setOpen(false)} />
           </div>
           <div className="modal__footer">
-            {/* <h3>Bolster Summer Camp</h3> */}
+           
             <div className="modal__footer__div">
-              <a href="https://forms.gle/25AUymSpDaNyzmu59">
+              <a href="https://forms.gle/FPDqfa57UPTzUZhs7">
                 <button>REGISTER NOW</button>
               </a>
             </div>
